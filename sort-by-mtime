@@ -1,0 +1,3 @@
+#!/bin/sh
+
+find "$1" -printf '%TY-%Tm-%Td_%TH:%TM:%TS\t%y\t%s\t%p\n' | sort -r
