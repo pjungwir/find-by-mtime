@@ -1,4 +1,8 @@
 #!/bin/sh
 
-# find "$1" -printf '%TY-%Tm-%Td_%TH:%TM:%TS\t%y\t%s\t%p\n' | sort -r
-find "$1" -printf '%TY-%Tm-%Td_%TH:%TM:%TS\t%p\n' | sort -r
+# find-by-mtime - Prints a filesystem tree with the most recently-changed files last.
+#
+# Based on disussion on the Philadelphia Linux Users Group.
+
+# find "$1" -printf '%TY-%Tm-%Td_%TH:%TM:%TS\t%y\t%s\t%p\n' | sort
+find "$1" -printf '%TY-%Tm-%Td_%TH:%TM:%TS\t%p\n' | sort
